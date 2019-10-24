@@ -1,0 +1,31 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "month"
+      ]
+    },
+    "action_attrition": {
+      "slots": [
+        "month"
+      ]
+    },
+    "utter_goodbye": {
+      "slots": []
+    }
+  },
+  "python": "3.6.7",
+  "max_histories": [
+    5,
+    3
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ],
+  "trained_at": "20190430-200859",
+  "rasa_core": "0.14.0",
+  "tensorflow": "1.13.1",
+  "sklearn": "0.20.2"
+}

@@ -1,0 +1,35 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_month
+- action_attrition
+config:
+  store_entities_as_slots: true
+entities:
+- month
+forms: []
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- inform:
+    use_entities: true
+slots:
+  month:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_month:
+  - text: In which month?
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  - text: Have a good day
+  utter_greet:
+  - text: Hello! How can I help?
+  - text: Hi. How are you?
+  - text: Hey! Can I help you with something?

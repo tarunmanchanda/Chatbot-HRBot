@@ -1,0 +1,32 @@
+slots:
+  month:
+    type: text
+
+
+intents:
+ - greet
+ - goodbye
+ - inform
+
+
+entities:
+ - month
+
+templates:
+  utter_greet:
+    - 'Hello! How can I help?'
+    - 'Hi. How are you?'
+    - 'Hey! Can I help you with something?'
+  utter_goodbye:
+    - 'Talk to you later.'
+    - 'Bye bye :('
+    - 'Have a good day'
+  utter_ask_month:
+    - 'In which month?'
+
+
+actions:
+ - utter_greet
+ - utter_goodbye
+ - utter_ask_month
+ - action_attrition
